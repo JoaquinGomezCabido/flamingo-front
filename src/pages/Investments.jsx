@@ -76,8 +76,8 @@ const Investments = () => {
                   key={id}
                   disabled={disabled}
                   logo={(
-                    <div className="w-full h-full text-primary rounded-lg">
-                      <img alt="" src={logo ? `${logoType},${logo}` : noPreview} className="w-full h-full" />
+                    <div className="flex w-full h-full text-primary rounded-lg bg-white">
+                      <img alt="" src={logo ? `${logoType},${logo}` : noPreview} className="m-auto w-auto h-auto" />
                     </div>
                   )}
                   preview={(

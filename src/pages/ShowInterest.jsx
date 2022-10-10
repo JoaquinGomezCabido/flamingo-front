@@ -88,8 +88,8 @@ const ShowInterest = () => {
         <div className="flex-column sm:flex sm:flex-wrap">
           <div className="w-[100%] mb-4">
             <div className="flex space-x-2 items-center">
-              <div className="w-10 h-10 md:w-12 md:h-12">
-                <img src={(interest.logo && `${interest.logoType},${interest.logo}`) || noPreview} alt="" className="w-full h-full rounded-lg border border-black-200 cursor-pointer" onClick={() => updateShowInterest(false)}/>
+              <div className="flex w-10 h-10 md:w-12 md:h-12 rounded-lg border cursor-pointer border-black-200 bg-white">
+                <img src={(interest.logo && `${interest.logoType},${interest.logo}`) || noPreview} alt="" className="w-auto h-auto m-auto" onClick={() => updateShowInterest(false)}/>
               </div>
               <Heading>
                 {interest.title}
